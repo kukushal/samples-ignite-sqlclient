@@ -1,0 +1,17 @@
+group 'samples.ignite.sqlclient'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: '*.jar')
+    runtime fileTree(dir: 'libs', include: '*.jar')
+
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+}
